@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Sign Up Toggle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="main-form" class="login-mode">
+      <!-- Left side -->
+      <div class="left_box" id="left-div">
+        <div id="main-heading">Login</div>
+        <div class="login_fields">
+          <div class="input_group">
+            <input type="text" id="username" required />
+            <label for="username">UserName</label>
+          </div>
+          <div class="input_group">
+            <input type="password" id="password" required />
+            <label for="password">PassWord</label>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="sub_bttn"
+          id="sub-bttn"
+          formenctype="text/plain"
+        >
+          Login
+        </button>
+        <div class="logo_option">
+          <span class="images"
+            ><img src="logos/google.png" alt="Google"
+          /></span>
+          <span class="images"
+            ><img src="logos/instagram.png" alt="Instagram"
+          /></span>
+          <span class="images"
+            ><img src="logos/facebook.png" alt="Facebook"
+          /></span>
+          <span class="images"
+            ><img src="logos/github.png" alt="GitHub"
+          /></span>
+        </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="right_box" id="right-div">
+        <p id="account">If don’t have an account then</p>
+        <a href="#" id="sign-up">Sign Up Now</a>
+      </div>
+    </form>
+
+    <script>
+      let form = document.getElementById("main-form");
+      let heading = document.getElementById("main-heading");
+      let subbttn = document.getElementById("sub-bttn");
+      let signup = document.getElementById("sign-up");
+      let account = document.getElementById("account");
+      let LeftBox = document.getElementById("left-div");
+      let RightBox = document.getElementById("right-div");
+
+      function Changer(e) {
+        e.preventDefault(); // stop link reload
+        form.classList.toggle("signup-mode");
+        form.classList.toggle("login-mode");
+
+        if (form.classList.contains("signup-mode")) {
+          heading.textContent = "Sign Up";
+          subbttn.textContent = "Sign Up";
+          signup.textContent = "Login Now";
+          account.textContent = "If have an account then";
+          LeftBox.style.left = "500px";
+          RightBox.style.right = "500px";
+          RightBox.style.background = `linear-gradient(
+        to right,
+        #007bff,
+        rgba(53, 2, 238, 0.575),
+        #007bff
+      )`;
+        } else {
+          heading.textContent = "Login";
+          subbttn.textContent = "Login";
+          signup.textContent = "Sign Up Now";
+          account.textContent = "If don’t have an account then";
+          LeftBox.style.left = "0px";
+          RightBox.style.right = "0px";
+          RightBox.style.background = ` linear-gradient(
+        to right,
+        rgba(53, 2, 238, 0.575),
+        #007bff,
+        rgba(53, 2, 238, 0.4)
+      )`;
+        }
+      }
+      signup.addEventListener("click", Changer);
+    </script>
+  </body>
+</html>

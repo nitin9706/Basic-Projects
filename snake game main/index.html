@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game 🐍</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--  snake game start -->
+    <center><h1>Snake Game 🐍</h1></center>
+    <main>
+      <div class="header">
+        <span class="high_score" id="high-score">High Score : 0</span>
+        <span class="score" id="score"> Score : 0</span>
+      </div>
+      <div class="game-box" id="game-board"></div>
+    </main>
+    <script>
+      let GameBoard = document.getElementById("game-board");
+      let SnakeArr = [{ x: 100, y: 50 }];
+      let InputDir = { x: 0, y: 0 };
+      let FoodPosition = { x: 500, y: 500 };
+      let score = 0;
+      let highest_score = 0;
+      let speed = 7;
+      let LastPaintTime = 0;
+
+      // making fps loading animation
+
+      window.requestAnimationFrame(main);
+      function main(ctime) {
+        window.requestAnimationFrame(main);
+        if ((ctime - LastPaintTime) / 1000 < 1 / speed) {
+          return;
+        }
+        LastPaintTime = ctime;
+        GameEngine();
+      }
+      // collsion function
+      function IsCollide(Snake) {
+        for (let i = 1; i < Snake.length; i++) {
+          if (Snake[i].x === Snake[0].x && Snake[i].y === Snake[0].y) {
+            return true;
+          }
+        }
+        if (
+          Snake[0].x >= 1000 ||
+          Snake[0].x < 0 ||
+          Snake[0].y >= 600 ||
+          Snake[0].y < 0
+        ) {
+          return true;
+        }
+        return false;
+      }
+      // getting high score from local storage
+      let High_Score = document.getElementById("high-score");
+      localStorage.getItem("High-Score");
+      function UpdatingHighScore() {
+        if (score > highest_score) {
+          localStorage.setItem("High-Score", score);
+          highest_score = score;
+        }
+        High_Score.innerHTML = "High Score :" + highest_score;
+      }
+
+      function GameEngine() {
+        // collide
+
+        if (IsCollide(SnakeArr)) {
+          InputDir = { x: 0, y: 0 };
+          SnakeArr = [{ x: 0, y: 0 }];
+          alert(" You Are OUt ☝️ ");
+          score = 0;
+          document.getElementById("score").innerHTML = "Score : " + score;
+        }
+
+        // eating machinsim
+        if (
+          SnakeArr[0].x === FoodPosition.x &&
+          SnakeArr[0].y === FoodPosition.y
+        ) {
+          SnakeArr.unshift({
+            x: SnakeArr[0].x + InputDir.x,
+            y: SnakeArr[0].y + InputDir.y,
+          });
+          score++;
+          document.getElementById("score").innerHTML = "Score : " + score;
+          UpdatingHighScore();
+
+          FoodPosition = {
+            x: Math.floor(Math.random() * 20) * 50,
+            y: Math.floor(Math.random() * 12) * 50,
+          };
+        }
+        // snake movement
+        for (let i = SnakeArr.length - 2; i >= 0; i--) {
+          SnakeArr[i + 1] = { ...SnakeArr[i] };
+        }
+        SnakeArr[0].x += InputDir.x;
+        SnakeArr[0].y += InputDir.y;
+        // snake appended
+        GameBoard.innerHTML = "";
+        SnakeArr.forEach((e, index) => {
+          let SnakeElement = document.createElement("div");
+          if (index === 0) {
+            SnakeElement.classList.add("snake_head");
+          } else {
+            SnakeElement.classList.add("snake_body");
+          }
+          SnakeElement.style.left = e.x + "px";
+          SnakeElement.style.top = e.y + "px";
+          GameBoard.appendChild(SnakeElement);
+        });
+
+        // getting the food in random postion
+        let FoodElement = document.createElement("div");
+        FoodElement.classList.add("food");
+        FoodElement.style.left = FoodPosition.x + "px";
+        FoodElement.style.top = FoodPosition.y + "px";
+        GameBoard.appendChild(FoodElement);
+      }
+
+      window.addEventListener("keydown", (e) => {
+        //  choosing key
+
+        switch (e.key) {
+          case "ArrowUp":
+            InputDir.x = 0;
+            InputDir.y = -50;
+            break;
+          case "ArrowDown":
+            InputDir.x = 0;
+            InputDir.y = 50;
+            break;
+          case "ArrowLeft":
+            InputDir.x = -50;
+            InputDir.y = 0;
+            break;
+          case "ArrowRight":
+            InputDir.x = 50;
+            InputDir.y = 0;
+            break;
+
+          default:
+            console.log("other key pressed");
+            break;
+        }
+      });
+    </script>
+  </body>
+</html>

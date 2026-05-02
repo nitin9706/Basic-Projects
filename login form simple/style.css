@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0 0 5px black;
+  transition: all 0.5s ease-in; /* smooth animation */
+  background-color: #cccccc38;
+  overflow: hidden;
+}
+
+.left_box,
+.right_box {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease;
+}
+
+.left_box div#main-heading {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.login_fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input_group {
+  position: relative;
+  margin-top: 30px;
+}
+
+.input_group input {
+  width: 350px;
+  padding: 12px;
+  font-size: 19px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 10px;
+}
+
+.input_group label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.4s ease all;
+}
+
+/* Floating label effect */
+.input_group input:focus + label,
+.input_group input:valid + label {
+  top: -8px;
+  left: 8px;
+  font-size: 12px;
+  color: #007bff;
+  background-color: #ccccccd7;
+  padding: 0 4px;
+  border-radius: 10px;
+}
+
+.sub_bttn {
+  height: 50px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid #cccccc38;
+  background: linear-gradient(
+    to right,
+    rgba(53, 2, 238, 0.575),
+    #007bff,
+    rgba(53, 2, 238, 0.4)
+  );
+  margin-top: 50px;
+  font-size: 18px;
+  color: antiquewhite;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:focus {
+  background: #cccccc38;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.logo_option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 350px;
+  margin-top: 30px;
+}
+.images {
+  margin: 8px;
+}
+.images img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+}
+.logo_option span:hover {
+  transform: scale(1.05);
+  transform: translateY(-7px);
+  transition: 0.5s;
+}
+
+.right_box {
+  background: linear-gradient(
+    to right,
+    #007bff,
+    rgba(53, 2, 238, 0.575),
+    #007bff
+  );
+  border-radius: 60px 15px 15px 60px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* When in signup mode, change right box radius */
+form.signup-mode .right_box {
+  border-radius: 15px 60px 60px 15px;
+}
+
+.right_box p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.right_box a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+  display: inline-block;
+  transition: 0.3s;
+  font-size: 30px;
+}
+.right_box a:hover {
+  text-decoration: underline;
+  color: #0dff00;
+}

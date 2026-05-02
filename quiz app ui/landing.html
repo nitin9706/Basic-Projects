@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Hub</title>
+    <link rel="stylesheet" href="stylesheets/landing_style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h1>Quiz Hub</h1>
+      <input type="text" id="input_search" placeholder="Search categories..." />
+      <div class="right_box">
+        <div class="score" id="top_score">100</div>
+        <div class="profile"></div>
+      </div>
+    </nav>
+
+    <section class="main_content">
+      <div class="tab-title">Start your learning journey</div>
+      <div class="category">Choose a category:</div>
+
+      <div class="all-cat glass-effect">
+        <div class="quiz-card">
+          <div class="img1 img-property"></div>
+          <p class="card-title">HTML</p>
+          <a href="html_question.html">Start</a>
+        </div>
+
+        <div class="quiz-card">
+          <div class="img2 img-property"></div>
+          <p class="card-title">CSS</p>
+          <a href="css_question.html">Start</a>
+        </div>
+
+        <div class="quiz-card">
+          <div class="img3 img-property"></div>
+          <p class="card-title">JavaScript</p>
+          <a href="js_question.html">Start</a>
+        </div>
+
+        <div class="quiz-card">
+          <div class="img4 img-property"></div>
+          <p class="card-title">React</p>
+          <a href="react_question.html">Start</a>
+        </div>
+        <div class="quiz-card">
+          <div class="img5 img-property"></div>
+          <p class="card-title">Python</p>
+          <a href="python_question.html">Start</a>
+        </div>
+
+        <div class="quiz-card">
+          <div class="img6 img-property"></div>
+          <p class="card-title">Java</p>
+          <a href="java_question.html">Start</a>
+        </div>
+
+        <div class="quiz-card">
+          <div class="img7 img-property"></div>
+          <p class="card-title">SQL</p>
+          <a href="sql_question.html">Start</a>
+        </div>
+
+        <div class="quiz-card">
+          <div class="img8 img-property"></div>
+          <p class="card-title">NodeJs</p>
+          <a href="nodejs_question.html">Start</a>
+        </div>
+      </div>
+    </section>
+    <script>
+      let last_score_count = localStorage.getItem("last-score");
+      document.getElementById("top_score").textContent = last_score_count;
+      let card_title = document.querySelectorAll(".card-title");
+    </script>
+  </body>
+</html>

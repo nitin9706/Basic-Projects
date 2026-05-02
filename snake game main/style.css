@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to right,
+    rgba(27, 167, 27, 0.586),
+    rgba(255, 255, 0, 0.4),
+    rgba(27, 167, 27, 0.5)
+  );
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  height: 50px;
+  font-weight: 900;
+  color: green;
+  padding: 10px;
+}
+.header {
+  height: 50px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.high_score {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+.score {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.game-box {
+  background-color: rgb(134, 183, 38);
+  height: 600px;
+  width: 1000px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  overflow: hidden;
+  position: relative;
+}
+
+.snake_head,
+.snake_body {
+  position: absolute;
+}
+
+.snake_head {
+  background: url(snake_head.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  transform: scale(1.08);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+}
+
+.snake_body {
+  background-color: rgba(88, 136, 65);
+  position: absolute;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+.food {
+  background: url(banana.png);
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}

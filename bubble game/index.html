@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <span>
+        <h1>Your Number is</h1>
+        <div class="score-box" id="numberguess">0</div></span
+      >
+      <div id="main-panel">
+        <div id="panel-nav">
+          <div class="nav-box">
+            hit
+            <div class="score-box" id="hitnum">0</div>
+          </div>
+          <div class="nav-box">
+            timer
+            <div class="score-box" id="timer">60s</div>
+          </div>
+          <div class="nav-box">
+            score
+            <div class="score-box" id="scorenum">0</div>
+          </div>
+        </div>
+        <div id="panel-body"></div>
+      </div>
+    </div>
+    <div id="game_result">
+      <span id="score_got">0</span>
+      <div id="info_score">
+        <span id="hit_taken"><p>hits used : 0</p></span>
+
+        <span id="accuracy"><p>accuracy : 0%</p></span>
+      </div>
+      <button id="again_bttn">Play Again!</button>
+    </div>
+    <script>
+      // varible that i want to use gloablaly
+      let TobeGuessedNumber = 0;
+      let score = 0;
+      let hit = 0;
+      let TimerDiv = document.getElementById("timer");
+
+      // creating the bubble
+
+      function MakingBubble() {
+        let bubble = "";
+        for (let i = 1; i <= 119; i++) {
+          let counter = Math.floor(Math.random() * 10);
+          bubble += `<div class="circle">${counter}</div>`;
+        }
+        document.getElementById("panel-body").innerHTML = bubble;
+      }
+
+      function Gameend() {
+        document.getElementById("main").style.display = "none";
+        document.getElementById("game_result").style.display = "flex";
+      }
+
+      // managing the timer here
+
+      function TimerCounter() {
+        let timer = 60;
+        const interval = setInterval(() => {
+          timer -= 1;
+          console.log(timer + "s");
+          TimerDiv.innerHTML = timer + "s";
+        }, 1000);
+        setTimeout(() => {
+          clearInterval(interval);
+          console.log("game Ends");
+          Gameend();
+        }, 60000);
+      }
+
+      // making the function which give the number that is need to be clicked
+
+      //  basically the random the number on the top
+
+      function RandomNumber() {
+        let GenNumber = Math.floor(Math.random() * 10);
+        document.getElementById("numberguess").innerHTML = GenNumber;
+        TobeGuessedNumber = GenNumber;
+      }
+
+      function CorrectChecker() {
+        TimerCounter();
+        if (TimerDiv.innerHTML == 0) {
+          console.log("finished " + TimerDiv.innerHTML);
+        } else {
+          RandomNumber();
+          MakingBubble();
+          document.querySelectorAll(".circle").forEach((e) => {
+            e.addEventListener("click", () => {
+              hit++;
+              if (e.innerHTML == TobeGuessedNumber) {
+                console.log("+1 point");
+                score++;
+                RandomNumber();
+              } else {
+                console.log("number guesses is wrong");
+              }
+              document.getElementById("hitnum").innerHTML = hit;
+              document.getElementById("scorenum").innerHTML = score;
+              document.getElementById("hit_taken").innerHTML =
+                "hits used :  " + hit;
+              document.getElementById("score_got").innerHTML = score;
+              let accuracy = (score / hit) * 100;
+              document.getElementById("accuracy").innerHTML =
+                "Accuracy : " + accuracy.toFixed(3) + "%";
+            });
+          });
+        }
+      }
+      CorrectChecker();
+
+      document.getElementById("again_bttn").addEventListener("click", () => {
+        document.getElementById("main").style.display = "flex";
+        document.getElementById("game_result").style.display = "none";
+        score = 0;
+        hit = 0;
+        CorrectChecker();
+        document.getElementById("hitnum").innerHTML = hit;
+        document.getElementById("scorenum").innerHTML = score;
+        document.getElementById("hit_taken").innerHTML = "hits used :  " + hit;
+        document.getElementById("score_got").innerHTML = score;
+        let accuracy = (score / hit) * 100;
+        document.getElementById("accuracy").innerHTML =
+          "Accuracy : " + accuracy.toFixed(3) + "%";
+      });
+    </script>
+  </body>
+</html>

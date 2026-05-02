@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Hub</title>
+    <link rel="stylesheet" href="/stylesheets/question_style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h1>Quiz Hub</h1>
+      <div class="right_box">
+        <div class="score" id="top_score">0</div>
+        <div class="profile"></div>
+      </div>
+    </nav>
+
+    <!-- result box -->
+    <div class="result" id="score-card">
+      <div class="center_div glass-effect">
+        <h1>your score</h1>
+        <div class="score_shower_circle" id="score-number"></div>
+        <div class="text_msg">
+          <h1>congratulations here is your score</h1>
+        </div>
+        <a href="landing.html" id="back-bttn">return back</a>
+      </div>
+    </div>
+
+    <section class="main_content glass-effect" id="main-box">
+      <div class="uper_control">
+        <a href="landing.html">
+          <div class="back-arrow"></div>
+        </a>
+        <div class="question-count">
+          <p>current question :</p>
+          <p id="q-num"></p>
+        </div>
+      </div>
+
+      <div class="outside-question-box">
+        <div class="question-box glass-effect">
+          <div class="first_line">
+            <h1 id="question-num"></h1>
+            <p id="main-question"></p>
+          </div>
+          <div class="answerbox">
+            <div class="answer" id="option1"></div>
+            <div class="answer" id="option2"></div>
+            <div class="answer" id="option3"></div>
+            <div class="answer" id="option4"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="submission-bttn">
+        <div class="sub-bttn" id="previous-bttn">← previous</div>
+        <div class="sub-bttn" id="submission_bttn">submit</div>
+        <div class="sub-bttn" id="next-bttn">next →</div>
+      </div>
+    </section>
+    <script>
+      let option_1 = document.getElementById("option1");
+      let option_2 = document.getElementById("option2");
+      let option_3 = document.getElementById("option3");
+      let option_4 = document.getElementById("option4");
+      let main_question = document.getElementById("main-question");
+      let question_num = document.getElementById("question-num");
+      let counter = 1;
+      let correct_answer_counter = 0;
+
+      //  declaration ends
+
+      let data = fetch("language_20_questions.json");
+      data
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          // default question
+          question_num.textContent = "Q1:";
+          document.getElementById("q-num").textContent = 1;
+          main_question.innerHTML = data.html.html_Question.Q1;
+          option_1.innerHTML = data.html.Ans_Q1.option1;
+          option_2.innerHTML = data.html.Ans_Q1.option2;
+          option_3.innerHTML = data.html.Ans_Q1.option3;
+          option_4.innerHTML = data.html.Ans_Q1.option4;
+
+          // //  checking correct answer
+          let answer_div = document.querySelectorAll(".answer");
+          answer_div.forEach((div) => {
+            answer_div.forEach((div) => {
+              div.classList.remove(
+                "correct",
+                "false",
+                "wrongansclicked",
+                "rightansclicked"
+              );
+            });
+            div.addEventListener("click", () => {
+              if (
+                div.innerHTML === data.html[`Ans_Q${counter}`].correct_answer
+              ) {
+                div.classList.add("correct");
+                div.classList.add("rightansclicked");
+                correct_answer_counter++;
+              } else {
+                div.classList.add("false");
+                div.classList.add("wrongansclicked");
+              }
+            });
+          });
+
+          // next bttn
+
+          document.getElementById("next-bttn").addEventListener("click", () => {
+            if (counter >= 20) {
+              return;
+            } else {
+              counter++;
+              question_num.textContent = ` Q${counter}:`;
+              document.getElementById("q-num").textContent = counter;
+              main_question.innerHTML = data.html.html_Question[`Q${counter}`];
+              option_1.innerHTML = data.html[`Ans_Q${counter}`].option1;
+              option_2.innerHTML = data.html[`Ans_Q${counter}`].option2;
+              option_3.innerHTML = data.html[`Ans_Q${counter}`].option3;
+              option_4.innerHTML = data.html[`Ans_Q${counter}`].option4;
+            }
+            // remove the all answer  from before
+            answer_div.forEach((div) => {
+              div.classList.remove(
+                "correct",
+                "false",
+                "wrongansclicked",
+                "rightansclicked"
+              );
+            });
+            console.log(correct_answer_counter);
+          });
+
+          // previous bttn
+
+          document
+            .getElementById("previous-bttn")
+            .addEventListener("click", () => {
+              if (counter <= 1) {
+                return;
+              } else {
+                counter--;
+                question_num.textContent = ` Q${counter}:`;
+                document.getElementById("q-num").textContent = counter;
+                main_question.innerHTML =
+                  data.html.html_Question[`Q${counter}`];
+                option_1.innerHTML = data.html[`Ans_Q${counter}`].option1;
+                option_2.innerHTML = data.html[`Ans_Q${counter}`].option2;
+                option_3.innerHTML = data.html[`Ans_Q${counter}`].option3;
+                option_4.innerHTML = data.html[`Ans_Q${counter}`].option4;
+              }
+            });
+          document
+            .getElementById("submission_bttn")
+            .addEventListener("click", () => {
+              document.getElementById("main-box").style.display = "none";
+              document.getElementById("score-card").style.display = "flex";
+              let score_box = document.getElementById("score-number");
+              score_box.append(correct_answer_counter + "/20");
+              localStorage.setItem("last-score", correct_answer_counter);
+              let last_score_number = localStorage.getItem("last-score");
+              document.getElementById("top_score").textContent =
+                last_score_number;
+            });
+        });
+    </script>
+  </body>
+</html>

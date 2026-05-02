@@ -1,0 +1,1321 @@
+{
+  "html": {
+    "html_Question": {
+      "Q1": "What does HTML stand for?",
+      "Q2": "Who invented HTML?",
+      "Q3": "Which tag is used for the largest heading?",
+      "Q4": "Correct HTML5 doctype?",
+      "Q5": "Which tag inserts an image?",
+      "Q6": "Which tag creates a hyperlink?",
+      "Q7": "Which attribute specifies alternate text for images?",
+      "Q8": "Which tag defines a table row?",
+      "Q9": "Which tag breaks a line?",
+      "Q10": "Which tag defines bold text?",
+      "Q11": "Which tag defines italic text?",
+      "Q12": "Which tag defines unordered list?",
+      "Q13": "Which tag defines list item?",
+      "Q14": "Which attribute changes link destination?",
+      "Q15": "Which element contains page metadata?",
+      "Q16": "Which tag shows table header?",
+      "Q17": "Which attribute defines inline CSS?",
+      "Q18": "Which tag embeds a video?",
+      "Q19": "Which tag defines section of document?",
+      "Q20": "Which element is used for forms?"
+    },
+    "Ans_Q1": {
+      "option1": "HighText ML",
+      "option2": "HyperText Markup Language",
+      "option3": "HyperTransfer Markup",
+      "option4": "None",
+      "correct_answer": "HyperText Markup Language"
+    },
+    "Ans_Q2": {
+      "option1": "Brendan Eich",
+      "option2": "Tim Berners-Lee",
+      "option3": "Dennis Ritchie",
+      "option4": "James Gosling",
+      "correct_answer": "Tim Berners-Lee"
+    },
+    "Ans_Q3": {
+      "option1": "&lt;h6&gt;",
+      "option2": "&lt;h3&gt;",
+      "option3": "&lt;h1&gt;",
+      "option4": "&lt;heading&gt;",
+      "correct_answer": "&lt;h1&gt;"
+    },
+    "Ans_Q4": {
+      "option1": "&lt;doctype html&gt;",
+      "option2": "&lt;!HTML&gt;",
+      "option3": "&lt;!doctype html&gt;",
+      "option4": "&lt;html5&gt;",
+      "correct_answer": "&lt;!doctype html&gt;"
+    },
+    "Ans_Q5": {
+      "option1": "&lt;src&gt;",
+      "option2": "&lt;image&gt;",
+      "option3": "&lt;img&gt;",
+      "option4": "&lt;pic&gt;",
+      "correct_answer": "&lt;img&gt;"
+    },
+    "Ans_Q6": {
+      "option1": "&lt;link&gt;",
+      "option2": "&lt;href&gt;",
+      "option3": "&lt;a&gt;",
+      "option4": "&lt;url&gt;",
+      "correct_answer": "&lt;a&gt;"
+    },
+    "Ans_Q7": {
+      "option1": "src",
+      "option2": "alt",
+      "option3": "title",
+      "option4": "desc",
+      "correct_answer": "alt"
+    },
+    "Ans_Q8": {
+      "option1": "&lt;td&gt;",
+      "option2": "&lt;tr&gt;",
+      "option3": "&lt;th&gt;",
+      "option4": "&lt;row&gt;",
+      "correct_answer": "&lt;tr&gt;"
+    },
+    "Ans_Q9": {
+      "option1": "&lt;break&gt;",
+      "option2": "&lt;br&gt;",
+      "option3": "&lt;lb&gt;",
+      "option4": "&lt;new&gt;",
+      "correct_answer": "&lt;br&gt;"
+    },
+    "Ans_Q10": {
+      "option1": "&lt;b&gt;",
+      "option2": "&lt;strong&gt;",
+      "option3": "&lt;bold&gt;",
+      "option4": "&lt;fat&gt;",
+      "correct_answer": "&lt;b&gt;"
+    },
+    "Ans_Q11": {
+      "option1": "&lt;i&gt;",
+      "option2": "&lt;italic&gt;",
+      "option3": "&lt;em&gt;",
+      "option4": "&lt;it&gt;",
+      "correct_answer": "&lt;i&gt;"
+    },
+    "Ans_Q12": {
+      "option1": "&lt;ul&gt;",
+      "option2": "&lt;list&gt;",
+      "option3": "&lt;ol&gt;",
+      "option4": "&lt;nl&gt;",
+      "correct_answer": "&lt;ul&gt;"
+    },
+    "Ans_Q13": {
+      "option1": "&lt;li&gt;",
+      "option2": "&lt;ul-li&gt;",
+      "option3": "&lt;item&gt;",
+      "option4": "&lt;point&gt;",
+      "correct_answer": "&lt;li&gt;"
+    },
+    "Ans_Q14": {
+      "option1": "alt",
+      "option2": "href",
+      "option3": "src",
+      "option4": "goto",
+      "correct_answer": "href"
+    },
+    "Ans_Q15": {
+      "option1": "&lt;body&gt;",
+      "option2": "&lt;meta&gt;",
+      "option3": "&lt;head&gt;",
+      "option4": "&lt;header&gt;",
+      "correct_answer": "&lt;head&gt;"
+    },
+    "Ans_Q16": {
+      "option1": "&lt;hd&gt;",
+      "option2": "&lt;th&gt;",
+      "option3": "&lt;thead&gt;",
+      "option4": "&lt;header&gt;",
+      "correct_answer": "&lt;th&gt;"
+    },
+    "Ans_Q17": {
+      "option1": "css",
+      "option2": "style",
+      "option3": "design",
+      "option4": "inline",
+      "correct_answer": "style"
+    },
+    "Ans_Q18": {
+      "option1": "&lt;vid&gt;",
+      "option2": "&lt;movie&gt;",
+      "option3": "&lt;video&gt;",
+      "option4": "&lt;mp4&gt;",
+      "correct_answer": "&lt;video&gt;"
+    },
+    "Ans_Q19": {
+      "option1": "&lt;division&gt;",
+      "option2": "&lt;block&gt;",
+      "option3": "&lt;section&gt;",
+      "option4": "&lt;article&gt;",
+      "correct_answer": "&lt;section&gt;"
+    },
+    "Ans_Q20": {
+      "option1": "&lt;form&gt;",
+      "option2": "&lt;input&gt;",
+      "option3": "&lt;fieldset&gt;",
+      "option4": "&lt;control&gt;",
+      "correct_answer": "&lt;form&gt;"
+    }
+  },
+
+  "css": {
+    "css_Question": {
+      "Q1": "CSS stands for?",
+      "Q2": "Which sets text color?",
+      "Q3": "Which sets background color?",
+      "Q4": "Which sets internal margin?",
+      "Q5": "Which sets external margin?",
+      "Q6": "Which property makes text bold?",
+      "Q7": "Which property changes font?",
+      "Q8": "Which selects element by id?",
+      "Q9": "Which hides element but preserves space?",
+      "Q10": "Which removes element from layout?",
+      "Q11": "Which sets border?",
+      "Q12": "Which aligns text center?",
+      "Q13": "Which makes element inline?",
+      "Q14": "Which sets width?",
+      "Q15": "Which sets height?",
+      "Q16": "What is default display of &lt;div&gt;?",
+      "Q17": "Which sets shadow?",
+      "Q18": "Which positions element absolutely?",
+      "Q19": "Which defines animation?",
+      "Q20": "Which applies gradient?"
+    },
+    "Ans_Q1": {
+      "option1": "Creative Style Sheet",
+      "option2": "Cascading Style Sheets",
+      "option3": "Color Style Syntax",
+      "option4": "None",
+      "correct_answer": "Cascading Style Sheets"
+    },
+    "Ans_Q2": {
+      "option1": "text-color",
+      "option2": "color",
+      "option3": "font-color",
+      "option4": "foreground",
+      "correct_answer": "color"
+    },
+    "Ans_Q3": {
+      "option1": "bg",
+      "option2": "background-color",
+      "option3": "color-bg",
+      "option4": "bgcolor",
+      "correct_answer": "background-color"
+    },
+    "Ans_Q4": {
+      "option1": "padding",
+      "option2": "margin",
+      "option3": "space",
+      "option4": "gap",
+      "correct_answer": "padding"
+    },
+    "Ans_Q5": {
+      "option1": "padding",
+      "option2": "margin",
+      "option3": "offset",
+      "option4": "outer",
+      "correct_answer": "margin"
+    },
+    "Ans_Q6": {
+      "option1": "bold",
+      "option2": "font-weight",
+      "option3": "strong",
+      "option4": "text-thick",
+      "correct_answer": "font-weight"
+    },
+    "Ans_Q7": {
+      "option1": "font-family",
+      "option2": "font-style",
+      "option3": "text-font",
+      "option4": "family",
+      "correct_answer": "font-family"
+    },
+    "Ans_Q8": {
+      "option1": "#",
+      "option2": ".",
+      "option3": "@",
+      "option4": "%",
+      "correct_answer": "#"
+    },
+    "Ans_Q9": {
+      "option1": "display:none",
+      "option2": "visibility:hidden",
+      "option3": "opacity:0",
+      "option4": "hide",
+      "correct_answer": "visibility:hidden"
+    },
+    "Ans_Q10": {
+      "option1": "visibility:hidden",
+      "option2": "remove:element",
+      "option3": "display:none",
+      "option4": "opacity:0",
+      "correct_answer": "display:none"
+    },
+    "Ans_Q11": {
+      "option1": "bordering",
+      "option2": "border",
+      "option3": "line",
+      "option4": "stroke",
+      "correct_answer": "border"
+    },
+    "Ans_Q12": {
+      "option1": "align:center",
+      "option2": "center-text",
+      "option3": "text-align:center",
+      "option4": "text:center",
+      "correct_answer": "text-align:center"
+    },
+    "Ans_Q13": {
+      "option1": "inline-set",
+      "option2": "display:inline",
+      "option3": "make-inline",
+      "option4": "inline-block",
+      "correct_answer": "display:inline"
+    },
+    "Ans_Q14": {
+      "option1": "w",
+      "option2": "width",
+      "option3": "size-x",
+      "option4": "length",
+      "correct_answer": "width"
+    },
+    "Ans_Q15": {
+      "option1": "height",
+      "option2": "h",
+      "option3": "size-y",
+      "option4": "len",
+      "correct_answer": "height"
+    },
+    "Ans_Q16": {
+      "option1": "inline",
+      "option2": "block",
+      "option3": "flex",
+      "option4": "grid",
+      "correct_answer": "block"
+    },
+    "Ans_Q17": {
+      "option1": "shadow",
+      "option2": "box-shadow",
+      "option3": "border-shadow",
+      "option4": "shadow-box",
+      "correct_answer": "box-shadow"
+    },
+    "Ans_Q18": {
+      "option1": "absolute-position",
+      "option2": "position:absolute",
+      "option3": "absolute",
+      "option4": "set:absolute",
+      "correct_answer": "position:absolute"
+    },
+    "Ans_Q19": {
+      "option1": "@animate",
+      "option2": "@keyframes",
+      "option3": "frames",
+      "option4": "animation-set",
+      "correct_answer": "@keyframes"
+    },
+    "Ans_Q20": {
+      "option1": "gradient",
+      "option2": "linear-gradient",
+      "option3": "color-fade",
+      "option4": "mix-gradient",
+      "correct_answer": "linear-gradient"
+    }
+  },
+
+  "js": {
+    "js_Question": {
+      "Q1": "JavaScript is ___ language?",
+      "Q2": "Which keyword declares variable?",
+      "Q3": "Which compares strictly?",
+      "Q4": "Which prints to console?",
+      "Q5": "typeof null returns?",
+      "Q6": "typeof [] returns?",
+      "Q7": "Which function delays execution?",
+      "Q8": "Which converts string to int?",
+      "Q9": "Which operator concatenates?",
+      "Q10": "NaN stands for?",
+      "Q11": "Which keyword defines function?",
+      "Q12": "Which creates array?",
+      "Q13": "Which loops through array?",
+      "Q14": "Which converts JSON to object?",
+      "Q15": "Which converts object to JSON?",
+      "Q16": "Which checks equality without type?",
+      "Q17": "Which is a boolean operator?",
+      "Q18": "Which defines constant?",
+      "Q19": "Which method adds item to array?",
+      "Q20": "Which removes last item?"
+    },
+    "Ans_Q1": {
+      "option1": "compiled",
+      "option2": "scripting",
+      "option3": "markup",
+      "option4": "assembly",
+      "correct_answer": "scripting"
+    },
+    "Ans_Q2": {
+      "option1": "var",
+      "option2": "let",
+      "option3": "const",
+      "option4": "all",
+      "correct_answer": "all"
+    },
+    "Ans_Q3": {
+      "option1": "==",
+      "option2": "===",
+      "option3": "=",
+      "option4": "!=",
+      "correct_answer": "==="
+    },
+    "Ans_Q4": {
+      "option1": "log()",
+      "option2": "console.log()",
+      "option3": "print()",
+      "option4": "write()",
+      "correct_answer": "console.log()"
+    },
+    "Ans_Q5": {
+      "option1": "int",
+      "option2": "object",
+      "option3": "null",
+      "option4": "undefined",
+      "correct_answer": "object"
+    },
+    "Ans_Q6": {
+      "option1": "object",
+      "option2": "array",
+      "option3": "collection",
+      "option4": "list",
+      "correct_answer": "object"
+    },
+    "Ans_Q7": {
+      "option1": "wait()",
+      "option2": "setTimeout()",
+      "option3": "pause()",
+      "option4": "delay()",
+      "correct_answer": "setTimeout()"
+    },
+    "Ans_Q8": {
+      "option1": "convert()",
+      "option2": "parseInt()",
+      "option3": "int()",
+      "option4": "toInt()",
+      "correct_answer": "parseInt()"
+    },
+    "Ans_Q9": {
+      "option1": "&",
+      "option2": "+",
+      "option3": "concat",
+      "option4": "join",
+      "correct_answer": "+"
+    },
+    "Ans_Q10": {
+      "option1": "Not a Null",
+      "option2": "Not a Number",
+      "option3": "No actual Number",
+      "option4": "None",
+      "correct_answer": "Not a Number"
+    },
+    "Ans_Q11": {
+      "option1": "function",
+      "option2": "fn",
+      "option3": "def",
+      "option4": "method",
+      "correct_answer": "function"
+    },
+    "Ans_Q12": {
+      "option1": "[]",
+      "option2": "array()",
+      "option3": "new arr()",
+      "option4": "(list)",
+      "correct_answer": "[]"
+    },
+    "Ans_Q13": {
+      "option1": "forEach()",
+      "option2": "loop()",
+      "option3": "repeat()",
+      "option4": "map()",
+      "correct_answer": "forEach()"
+    },
+    "Ans_Q14": {
+      "option1": "JSON.toObject()",
+      "option2": "JSON.parse()",
+      "option3": "JSON.decode()",
+      "option4": "parseJSON()",
+      "correct_answer": "JSON.parse()"
+    },
+    "Ans_Q15": {
+      "option1": "JSON.object()",
+      "option2": "JSON.stringify()",
+      "option3": "stringifyJSON()",
+      "option4": "toJSON()",
+      "correct_answer": "JSON.stringify()"
+    },
+    "Ans_Q16": {
+      "option1": "equals",
+      "option2": "==",
+      "option3": "compare",
+      "option4": "same",
+      "correct_answer": "=="
+    },
+    "Ans_Q17": {
+      "option1": "and",
+      "option2": "OR",
+      "option3": "boolean",
+      "option4": "&&",
+      "correct_answer": "&&"
+    },
+    "Ans_Q18": {
+      "option1": "const",
+      "option2": "let",
+      "option3": "make",
+      "option4": "final",
+      "correct_answer": "const"
+    },
+    "Ans_Q19": {
+      "option1": "push()",
+      "option2": "add()",
+      "option3": "insert()",
+      "option4": "append()",
+      "correct_answer": "push()"
+    },
+    "Ans_Q20": {
+      "option1": "remove()",
+      "option2": "pop()",
+      "option3": "delete()",
+      "option4": "slice()",
+      "correct_answer": "pop()"
+    }
+  },
+
+  "react": {
+    "react_Question": {
+      "Q1": "React is a ___?",
+      "Q2": "React was developed by?",
+      "Q3": "React uses ___ DOM?",
+      "Q4": "JSX stands for?",
+      "Q5": "useState is a ___?",
+      "Q6": "useEffect runs on ___?",
+      "Q7": "Which renders component?",
+      "Q8": "Props are used to ___?",
+      "Q9": "Component returns ___?",
+      "Q10": "Which hook manages state?",
+      "Q11": "Which hook stores reference?",
+      "Q12": "React follows ___ architecture?",
+      "Q13": "React files use extension?",
+      "Q14": "React Router handles ___?",
+      "Q15": "Which creates React app?",
+      "Q16": "Which updates UI?",
+      "Q17": "Which defines component?",
+      "Q18": "Which performs side effects?",
+      "Q19": "State is ___?",
+      "Q20": "Props are ___?"
+    },
+    "Ans_Q1": {
+      "option1": "framework",
+      "option2": "library",
+      "option3": "language",
+      "option4": "tool",
+      "correct_answer": "library"
+    },
+    "Ans_Q2": {
+      "option1": "Google",
+      "option2": "Facebook",
+      "option3": "Microsoft",
+      "option4": "Apple",
+      "correct_answer": "Facebook"
+    },
+    "Ans_Q3": {
+      "option1": "virtual",
+      "option2": "real",
+      "option3": "shadow",
+      "option4": "binary",
+      "correct_answer": "virtual"
+    },
+    "Ans_Q4": {
+      "option1": "JavaScript XML",
+      "option2": "JSON XML",
+      "option3": "Java XML",
+      "option4": "JS Extension",
+      "correct_answer": "JavaScript XML"
+    },
+    "Ans_Q5": {
+      "option1": "method",
+      "option2": "hook",
+      "option3": "component",
+      "option4": "event",
+      "correct_answer": "hook"
+    },
+    "Ans_Q6": {
+      "option1": "render",
+      "option2": "mount",
+      "option3": "dependency change",
+      "option4": "load",
+      "correct_answer": "dependency change"
+    },
+    "Ans_Q7": {
+      "option1": "ReactDOM.render()",
+      "option2": "render()",
+      "option3": "inject()",
+      "option4": "start()",
+      "correct_answer": "ReactDOM.render()"
+    },
+    "Ans_Q8": {
+      "option1": "store data",
+      "option2": "send data",
+      "option3": "receive data",
+      "option4": "update state",
+      "correct_answer": "send data"
+    },
+    "Ans_Q9": {
+      "option1": "HTML",
+      "option2": "JSX",
+      "option3": "text",
+      "option4": "DOM",
+      "correct_answer": "JSX"
+    },
+    "Ans_Q10": {
+      "option1": "useRef",
+      "option2": "useState",
+      "option3": "useEffect",
+      "option4": "useMemo",
+      "correct_answer": "useState"
+    },
+    "Ans_Q11": {
+      "option1": "useEffect",
+      "option2": "useState",
+      "option3": "useRef",
+      "option4": "useMemo",
+      "correct_answer": "useRef"
+    },
+    "Ans_Q12": {
+      "option1": "OOP",
+      "option2": "Component-based",
+      "option3": "MVC",
+      "option4": "MVVM",
+      "correct_answer": "Component-based"
+    },
+    "Ans_Q13": {
+      "option1": ".txt",
+      "option2": ".js",
+      "option3": ".jsx",
+      "option4": ".react",
+      "correct_answer": ".jsx"
+    },
+    "Ans_Q14": {
+      "option1": "components",
+      "option2": "routing",
+      "option3": "states",
+      "option4": "hooks",
+      "correct_answer": "routing"
+    },
+    "Ans_Q15": {
+      "option1": "npm create",
+      "option2": "npx create-react-app",
+      "option3": "react init",
+      "option4": "npm start",
+      "correct_answer": "npx create-react-app"
+    },
+    "Ans_Q16": {
+      "option1": "Virtual DOM",
+      "option2": "Real DOM",
+      "option3": "Shadow DOM",
+      "option4": "CPU",
+      "correct_answer": "Virtual DOM"
+    },
+    "Ans_Q17": {
+      "option1": "Component()",
+      "option2": "React()",
+      "option3": "function()",
+      "option4": "define()",
+      "correct_answer": "function()"
+    },
+    "Ans_Q18": {
+      "option1": "useState",
+      "option2": "useEffect",
+      "option3": "useRef",
+      "option4": "useCallback",
+      "correct_answer": "useEffect"
+    },
+    "Ans_Q19": {
+      "option1": "mutable",
+      "option2": "immutable",
+      "option3": "temporary",
+      "option4": "fixed",
+      "correct_answer": "mutable"
+    },
+    "Ans_Q20": {
+      "option1": "immutable",
+      "option2": "mutable",
+      "option3": "fixed",
+      "option4": "temporary",
+      "correct_answer": "immutable"
+    }
+  },
+
+  "node": {
+    "node_Question": {
+      "Q1": "Node is a ___?",
+      "Q2": "Node runs on ___ engine?",
+      "Q3": "Which module handles files?",
+      "Q4": "Command to init npm?",
+      "Q5": "Popular Node framework?",
+      "Q6": "Which imports modules?",
+      "Q7": "Default HTTP port?",
+      "Q8": "Node is ___ threaded?",
+      "Q9": "Run file using?",
+      "Q10": "Which module creates server?",
+      "Q11": "Which handles OS info?",
+      "Q12": "Which reads directory?",
+      "Q13": "Which handles paths?",
+      "Q14": "Which handles events?",
+      "Q15": "Which handles streams?",
+      "Q16": "Which installs packages?",
+      "Q17": "Which updates npm?",
+      "Q18": "Which creates package.json?",
+      "Q19": "Which watches file changes?",
+      "Q20": "Which handles encryption?"
+    },
+    "Ans_Q1": {
+      "option1": "framework",
+      "option2": "runtime",
+      "option3": "compiler",
+      "option4": "tool",
+      "correct_answer": "runtime"
+    },
+    "Ans_Q2": {
+      "option1": "V8",
+      "option2": "Gecko",
+      "option3": "SpiderMonkey",
+      "option4": "Edge",
+      "correct_answer": "V8"
+    },
+    "Ans_Q3": {
+      "option1": "os",
+      "option2": "fs",
+      "option3": "path",
+      "option4": "http",
+      "correct_answer": "fs"
+    },
+    "Ans_Q4": {
+      "option1": "npm init",
+      "option2": "npm start",
+      "option3": "npm begin",
+      "option4": "npm config",
+      "correct_answer": "npm init"
+    },
+    "Ans_Q5": {
+      "option1": "Express",
+      "option2": "Laravel",
+      "option3": "Django",
+      "option4": "Rails",
+      "correct_answer": "Express"
+    },
+    "Ans_Q6": {
+      "option1": "include",
+      "option2": "require",
+      "option3": "import",
+      "option4": "module",
+      "correct_answer": "require"
+    },
+    "Ans_Q7": {
+      "option1": "3000",
+      "option2": "80",
+      "option3": "5000",
+      "option4": "443",
+      "correct_answer": "80"
+    },
+    "Ans_Q8": {
+      "option1": "single",
+      "option2": "multi",
+      "option3": "dual",
+      "option4": "none",
+      "correct_answer": "single"
+    },
+    "Ans_Q9": {
+      "option1": "node file.js",
+      "option2": "run file.js",
+      "option3": "js file",
+      "option4": "exec file",
+      "correct_answer": "node file.js"
+    },
+    "Ans_Q10": {
+      "option1": "cluster",
+      "option2": "http",
+      "option3": "net",
+      "option4": "fs",
+      "correct_answer": "http"
+    },
+    "Ans_Q11": {
+      "option1": "path",
+      "option2": "os",
+      "option3": "net",
+      "option4": "system",
+      "correct_answer": "os"
+    },
+    "Ans_Q12": {
+      "option1": "dir()",
+      "option2": "getDir()",
+      "option3": "fs.readdir()",
+      "option4": "fs.dir()",
+      "correct_answer": "fs.readdir()"
+    },
+    "Ans_Q13": {
+      "option1": "path",
+      "option2": "route",
+      "option3": "map",
+      "option4": "paths",
+      "correct_answer": "path"
+    },
+    "Ans_Q14": {
+      "option1": "event",
+      "option2": "events",
+      "option3": "listener",
+      "option4": "reactive",
+      "correct_answer": "events"
+    },
+    "Ans_Q15": {
+      "option1": "pipes",
+      "option2": "streams",
+      "option3": "flow",
+      "option4": "water",
+      "correct_answer": "streams"
+    },
+    "Ans_Q16": {
+      "option1": "install",
+      "option2": "npm install",
+      "option3": "add pkg",
+      "option4": "npm add",
+      "correct_answer": "npm install"
+    },
+    "Ans_Q17": {
+      "option1": "npm update -g",
+      "option2": "upgrade",
+      "option3": "update now",
+      "option4": "patch",
+      "correct_answer": "npm update -g"
+    },
+    "Ans_Q18": {
+      "option1": "npm create-json",
+      "option2": "npm init",
+      "option3": "create package",
+      "option4": "make-json",
+      "correct_answer": "npm init"
+    },
+    "Ans_Q19": {
+      "option1": "watch",
+      "option2": "listen",
+      "option3": "fs.watch()",
+      "option4": "fs.listen()",
+      "correct_answer": "fs.watch()"
+    },
+    "Ans_Q20": {
+      "option1": "crypto",
+      "option2": "encrypt",
+      "option3": "secure",
+      "option4": "node-crypt",
+      "correct_answer": "crypto"
+    }
+  },
+
+  "sql": {
+    "sql_Question": {
+      "Q1": "SQL stands for?",
+      "Q2": "Which retrieves data?",
+      "Q3": "Which deletes rows?",
+      "Q4": "Primary key means?",
+      "Q5": "Wildcard selects all?",
+      "Q6": "Which filters rows?",
+      "Q7": "Which sorts rows?",
+      "Q8": "Which joins tables?",
+      "Q9": "Which inserts rows?",
+      "Q10": "Which drops a table?",
+      "Q11": "Which groups rows?",
+      "Q12": "Which updates rows?",
+      "Q13": "Which deletes entire table?",
+      "Q14": "Which returns unique?",
+      "Q15": "Which adds column?",
+      "Q16": "Which removes column?",
+      "Q17": "Which searches pattern?",
+      "Q18": "Which counts rows?",
+      "Q19": "Which returns max value?",
+      "Q20": "Which creates table?"
+    },
+    "Ans_Q1": {
+      "option1": "Structured Query Language",
+      "option2": "Strong Query List",
+      "option3": "System Query Lang",
+      "option4": "None",
+      "correct_answer": "Structured Query Language"
+    },
+    "Ans_Q2": {
+      "option1": "UPDATE",
+      "option2": "SELECT",
+      "option3": "DELETE",
+      "option4": "INSERT",
+      "correct_answer": "SELECT"
+    },
+    "Ans_Q3": {
+      "option1": "CUT",
+      "option2": "DROP",
+      "option3": "DELETE",
+      "option4": "REMOVE",
+      "correct_answer": "DELETE"
+    },
+    "Ans_Q4": {
+      "option1": "unique + not null",
+      "option2": "unique only",
+      "option3": "nullable",
+      "option4": "duplicate",
+      "correct_answer": "unique + not null"
+    },
+    "Ans_Q5": {
+      "option1": "SELECT ALL",
+      "option2": "SELECT *",
+      "option3": "SELECT EVERY",
+      "option4": "SELECT #",
+      "correct_answer": "SELECT *"
+    },
+    "Ans_Q6": {
+      "option1": "WHERE",
+      "option2": "ORDER",
+      "option3": "GROUP",
+      "option4": "SELECT",
+      "correct_answer": "WHERE"
+    },
+    "Ans_Q7": {
+      "option1": "SORT",
+      "option2": "ORDER BY",
+      "option3": "GROUP BY",
+      "option4": "BY ORDER",
+      "correct_answer": "ORDER BY"
+    },
+    "Ans_Q8": {
+      "option1": "MATCH",
+      "option2": "JOIN",
+      "option3": "MERGE",
+      "option4": "COMBINE",
+      "correct_answer": "JOIN"
+    },
+    "Ans_Q9": {
+      "option1": "INSERT INTO",
+      "option2": "ADD",
+      "option3": "PUT",
+      "option4": "SAVE",
+      "correct_answer": "INSERT INTO"
+    },
+    "Ans_Q10": {
+      "option1": "DELETE",
+      "option2": "DROP",
+      "option3": "CLEAR",
+      "option4": "CUT",
+      "correct_answer": "DROP"
+    },
+    "Ans_Q11": {
+      "option1": "GROUP BY",
+      "option2": "COUNT",
+      "option3": "SUM",
+      "option4": "ORDER BY",
+      "correct_answer": "GROUP BY"
+    },
+    "Ans_Q12": {
+      "option1": "MODIFY",
+      "option2": "UPDATE",
+      "option3": "CHANGE",
+      "option4": "WRITE",
+      "correct_answer": "UPDATE"
+    },
+    "Ans_Q13": {
+      "option1": "DELETE",
+      "option2": "REMOVE",
+      "option3": "TRUNCATE",
+      "option4": "CUT",
+      "correct_answer": "TRUNCATE"
+    },
+    "Ans_Q14": {
+      "option1": "ALL",
+      "option2": "DISTINCT",
+      "option3": "UNIQUE",
+      "option4": "FILTER",
+      "correct_answer": "DISTINCT"
+    },
+    "Ans_Q15": {
+      "option1": "INSERT COLUMN",
+      "option2": "ALTER TABLE ADD",
+      "option3": "ADD COLUMN",
+      "option4": "COLUMN ADD",
+      "correct_answer": "ALTER TABLE ADD"
+    },
+    "Ans_Q16": {
+      "option1": "DELETE COLUMN",
+      "option2": "ALTER TABLE DROP",
+      "option3": "REMOVE COLUMN",
+      "option4": "DROP FIELD",
+      "correct_answer": "ALTER TABLE DROP"
+    },
+    "Ans_Q17": {
+      "option1": "LIKE",
+      "option2": "SEARCH",
+      "option3": "PATTERN",
+      "option4": "MATCH",
+      "correct_answer": "LIKE"
+    },
+    "Ans_Q18": {
+      "option1": "SUM()",
+      "option2": "COUNT()",
+      "option3": "TOTAL()",
+      "option4": "NUM()",
+      "correct_answer": "COUNT()"
+    },
+    "Ans_Q19": {
+      "option1": "LARGEST()",
+      "option2": "MAX()",
+      "option3": "BIG()",
+      "option4": "HI()",
+      "correct_answer": "MAX()"
+    },
+    "Ans_Q20": {
+      "option1": "MAKE",
+      "option2": "CREATE TABLE",
+      "option3": "NEW TABLE",
+      "option4": "ADD TABLE",
+      "correct_answer": "CREATE TABLE"
+    }
+  },
+
+  "java": {
+    "java_Question": {
+      "Q1": "Java was created by?",
+      "Q2": "Java is ___ language?",
+      "Q3": "OOP principle that hides data?",
+      "Q4": "Keyword to create object?",
+      "Q5": "JVM stands for?",
+      "Q6": "JDK includes?",
+      "Q7": "Main method syntax?",
+      "Q8": "Keyword for inheritance?",
+      "Q9": "Non-primitive type?",
+      "Q10": "Java file extension?",
+      "Q11": "Wrapper class for int?",
+      "Q12": "Method overloading means?",
+      "Q13": "Method overriding means?",
+      "Q14": "Java uses ___ model?",
+      "Q15": "Which handles exceptions?",
+      "Q16": "Keyword for package?",
+      "Q17": "Which defines interface?",
+      "Q18": "Which prevents inheritance?",
+      "Q19": "Which allocates memory?",
+      "Q20": "Which handles threads?"
+    },
+    "Ans_Q1": {
+      "option1": "Dennis Ritchie",
+      "option2": "James Gosling",
+      "option3": "Elon Musk",
+      "option4": "Richard Stallman",
+      "correct_answer": "James Gosling"
+    },
+    "Ans_Q2": {
+      "option1": "compiled",
+      "option2": "interpreted",
+      "option3": "assembly",
+      "option4": "both compiled & interpreted",
+      "correct_answer": "both compiled & interpreted"
+    },
+    "Ans_Q3": {
+      "option1": "Abstraction",
+      "option2": "Encapsulation",
+      "option3": "Inheritance",
+      "option4": "Polymorphism",
+      "correct_answer": "Encapsulation"
+    },
+    "Ans_Q4": {
+      "option1": "init",
+      "option2": "new",
+      "option3": "create",
+      "option4": "make",
+      "correct_answer": "new"
+    },
+    "Ans_Q5": {
+      "option1": "Java Virtual Machine",
+      "option2": "Java Visual Model",
+      "option3": "Java Variable Manager",
+      "option4": "None",
+      "correct_answer": "Java Virtual Machine"
+    },
+    "Ans_Q6": {
+      "option1": "JVM only",
+      "option2": "Compiler only",
+      "option3": "Tools + JVM + Compiler",
+      "option4": "Editor",
+      "correct_answer": "Tools + JVM + Compiler"
+    },
+    "Ans_Q7": {
+      "option1": "public static void main(String[] args)",
+      "option2": "main()",
+      "option3": "public void main()",
+      "option4": "void main()",
+      "correct_answer": "public static void main(String[] args)"
+    },
+    "Ans_Q8": {
+      "option1": "inherits",
+      "option2": "extends",
+      "option3": "super",
+      "option4": "parent",
+      "correct_answer": "extends"
+    },
+    "Ans_Q9": {
+      "option1": "boolean",
+      "option2": "char",
+      "option3": "String",
+      "option4": "int",
+      "correct_answer": "String"
+    },
+    "Ans_Q10": {
+      "option1": ".jav",
+      "option2": ".java",
+      "option3": ".jv",
+      "option4": ".j",
+      "correct_answer": ".java"
+    },
+    "Ans_Q11": {
+      "option1": "Int",
+      "option2": "Integer",
+      "option3": "intClass",
+      "option4": "WrapInt",
+      "correct_answer": "Integer"
+    },
+    "Ans_Q12": {
+      "option1": "same method diff class",
+      "option2": "same name diff params",
+      "option3": "same name diff class",
+      "option4": "diff return types only",
+      "correct_answer": "same name diff params"
+    },
+    "Ans_Q13": {
+      "option1": "same name in subclass",
+      "option2": "same name diff params",
+      "option3": "same variables",
+      "option4": "same fields",
+      "correct_answer": "same name in subclass"
+    },
+    "Ans_Q14": {
+      "option1": "single-threaded",
+      "option2": "multi-threaded",
+      "option3": "shared-memory",
+      "option4": "static",
+      "correct_answer": "multi-threaded"
+    },
+    "Ans_Q15": {
+      "option1": "catch",
+      "option2": "throw",
+      "option3": "except",
+      "option4": "handle",
+      "correct_answer": "throw"
+    },
+    "Ans_Q16": {
+      "option1": "pkg",
+      "option2": "package",
+      "option3": "pack",
+      "option4": "use",
+      "correct_answer": "package"
+    },
+    "Ans_Q17": {
+      "option1": "interface()",
+      "option2": "interface",
+      "option3": "new interface",
+      "option4": "create interface",
+      "correct_answer": "interface"
+    },
+    "Ans_Q18": {
+      "option1": "final",
+      "option2": "static",
+      "option3": "sealed",
+      "option4": "private",
+      "correct_answer": "final"
+    },
+    "Ans_Q19": {
+      "option1": "malloc",
+      "option2": "allocate",
+      "option3": "new",
+      "option4": "make",
+      "correct_answer": "new"
+    },
+    "Ans_Q20": {
+      "option1": "thread",
+      "option2": "threads",
+      "option3": "Thread class",
+      "option4": "run",
+      "correct_answer": "Thread class"
+    }
+  },
+
+  "python": {
+    "python_Question": {
+      "Q1": "Python was created by?",
+      "Q2": "Python is ___ language?",
+      "Q3": "Which prints output?",
+      "Q4": "Lists use ___?",
+      "Q5": "Define function using?",
+      "Q6": "Keyword for class?",
+      "Q7": "Exponent operator?",
+      "Q8": "Exception handler?",
+      "Q9": "PEP 8 means?",
+      "Q10": "Data analysis library?",
+      "Q11": "Tuples use ___?",
+      "Q12": "Dictionary uses ___?",
+      "Q13": "Which converts string to int?",
+      "Q14": "Which loops items?",
+      "Q15": "Which keyword ends loop?",
+      "Q16": "Which imports modules?",
+      "Q17": "Which generates random?",
+      "Q18": "Which defines lambda function?",
+      "Q19": "Which opens files?",
+      "Q20": "Which checks type?"
+    },
+    "Ans_Q1": {
+      "option1": "Dennis",
+      "option2": "Guido van Rossum",
+      "option3": "Elon",
+      "option4": "Linus",
+      "correct_answer": "Guido van Rossum"
+    },
+    "Ans_Q2": {
+      "option1": "compiled",
+      "option2": "scripting",
+      "option3": "markup",
+      "option4": "assembly",
+      "correct_answer": "scripting"
+    },
+    "Ans_Q3": {
+      "option1": "echo()",
+      "option2": "print()",
+      "option3": "out()",
+      "option4": "log()",
+      "correct_answer": "print()"
+    },
+    "Ans_Q4": {
+      "option1": "[]",
+      "option2": "()",
+      "option3": "{}",
+      "option4": "<>",
+      "correct_answer": "[]"
+    },
+    "Ans_Q5": {
+      "option1": "def",
+      "option2": "function",
+      "option3": "fn",
+      "option4": "make",
+      "correct_answer": "def"
+    },
+    "Ans_Q6": {
+      "option1": "create",
+      "option2": "class",
+      "option3": "object",
+      "option4": "define",
+      "correct_answer": "class"
+    },
+    "Ans_Q7": {
+      "option1": "^",
+      "option2": "**",
+      "option3": "exp()",
+      "option4": "^^",
+      "correct_answer": "**"
+    },
+    "Ans_Q8": {
+      "option1": "error",
+      "option2": "except",
+      "option3": "catch",
+      "option4": "handle",
+      "correct_answer": "except"
+    },
+    "Ans_Q9": {
+      "option1": "style guide",
+      "option2": "compiler",
+      "option3": "runtime",
+      "option4": "parser",
+      "correct_answer": "style guide"
+    },
+    "Ans_Q10": {
+      "option1": "Matplotlib",
+      "option2": "Pandas",
+      "option3": "NumPy",
+      "option4": "Tkinter",
+      "correct_answer": "Pandas"
+    },
+    "Ans_Q11": {
+      "option1": "{}",
+      "option2": "()",
+      "option3": "[]",
+      "option4": "<>",
+      "correct_answer": "()"
+    },
+    "Ans_Q12": {
+      "option1": "[]",
+      "option2": "keys",
+      "option3": "pairs",
+      "option4": "{}",
+      "correct_answer": "{}"
+    },
+    "Ans_Q13": {
+      "option1": "toInt()",
+      "option2": "int()",
+      "option3": "convert()",
+      "option4": "num()",
+      "correct_answer": "int()"
+    },
+    "Ans_Q14": {
+      "option1": "loop()",
+      "option2": "for",
+      "option3": "while",
+      "option4": "iterate()",
+      "correct_answer": "for"
+    },
+    "Ans_Q15": {
+      "option1": "stop",
+      "option2": "break",
+      "option3": "end",
+      "option4": "halt",
+      "correct_answer": "break"
+    },
+    "Ans_Q16": {
+      "option1": "include",
+      "option2": "import",
+      "option3": "load",
+      "option4": "use",
+      "correct_answer": "import"
+    },
+    "Ans_Q17": {
+      "option1": "random()",
+      "option2": "rand()",
+      "option3": "random.random()",
+      "option4": "rnd()",
+      "correct_answer": "random.random()"
+    },
+    "Ans_Q18": {
+      "option1": "lambda",
+      "option2": "def lambda",
+      "option3": "function lambda",
+      "option4": "lam",
+      "correct_answer": "lambda"
+    },
+    "Ans_Q19": {
+      "option1": "open()",
+      "option2": "file()",
+      "option3": "read()",
+      "option4": "get()",
+      "correct_answer": "open()"
+    },
+    "Ans_Q20": {
+      "option1": "type()",
+      "option2": "isType()",
+      "option3": "typeof()",
+      "option4": "kind()",
+      "correct_answer": "type()"
+    }
+  }
+}

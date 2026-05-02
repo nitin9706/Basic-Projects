@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+body {
+  background: url("https://i.pinimg.com/1200x/66/82/b3/6682b3135254ed789552b9362faef906.jpg");
+}
+* {
+  scroll-behavior: smooth;
+}
